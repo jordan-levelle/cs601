@@ -1,0 +1,191 @@
+/* -----------------------General Styles-------------------------------- */
+body {
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(223, 232, 235);
+}
+
+
+@media only screen and (max-width: 600px) {
+body {
+      padding: 5px;
+      margin: 5px;
+      background-color: rgb(154, 214, 235);
+  }
+  }
+
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+  p.homeText  {
+    font-size: 20px;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  p.homeText {
+    font-size: 15px;
+  }
+}
+
+/* If the screen size is 600px wide or less, hide the element */
+@media only screen and (max-width: 600px) {
+  div.img_Child {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  div#centerPhoto {
+    display: none;
+  }
+}
+
+
+/* Style content Dropdown Menu */
+.dropbtn {
+    background-color: #9e6c9c;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+  }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    border-radius: 5%;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+.dropdown:hover .dropbtn {
+    background-color: #325234;
+  }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: lightblue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+/* Container used on various pages*/
+.section_Container {
+    border-style: outset;
+    padding: 5px;
+    margin: 5px;
+    background-color: #f1f1f1;
+}
+
+#table {
+  text-align: center;
+}
+
+/* links style */
+
+a:link, a:visited {
+    background-color: rgb(125, 155, 165);
+    color: rgb(20, 20, 20);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5%;
+    display: inline-block;
+  }
+  
+a:hover, a:active {
+    background-color: #686464;
+  }
+
+/* Header Styles */
+h2 {
+   color: rgb(75, 77, 77); 
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 240%;
+}
+
+h4 {
+    color: rgb(75, 77, 77); 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 150%;
+}
+
+/* ----------------------------------End General Styles--------------------------------- */
+
+/* ----------------------------------Homepage specific styles------------------------------------ */
+
+.profile_Parent {
+  display: flex;
+}
+
+img.profileImg {
+    display: flex;
+    border-radius: 5%;
+}
+
+.list_Parent {
+  display: flex;
+  justify-content: center;
+}
+
+/* --------------------------------End Homepage styles---------------------------------- */
+
+
+/* --------------------------------Blogpage specific Styles--------------------------------------- */
+.bloglist {
+    list-style-type: none;
+    border-style: outset;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #f1f1f1;
+}
+
+/* --------------------------------Howto page Specific Styles------------------------------------------ */
+
+#centerPhoto {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 625px
+}
+
+ul.howToList {
+  background: none;
+  padding: 20px;
+}
+
+ul li {
+  border-style: groove;
+  background: #f1f1f1;
+  color: rgb(0, 0, 0);
+  margin: 5px;
+  font-size: 20px;
+}
